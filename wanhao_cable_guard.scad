@@ -1,5 +1,5 @@
-hook_out = 15;
-hook_over = 6;
+hook_out = 20;
+hook_over = 8;
 wall_thickness = 2;
 top_thickness = 1;
 metal_thickness = 1;
@@ -45,8 +45,8 @@ rotate([0, -90, 0]) {
          cube([trap_width, 4, width]);
 
          // hook around cable
-         translate([trap_width - 3, ( 0 - hook_over) - 6, wall_height - hook_over - 1])
-           cube([3, hook_over, width]);
+         translate([trap_width - 3, - 17, wall_height - hook_over + 1])
+           cube([3, hook_over + 1, width]);
 
   }
 }
