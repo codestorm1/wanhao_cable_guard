@@ -9,7 +9,7 @@ width = 7;
 lip_thickness = 1.5;
 top_lip_length = wall_thickness + 1;
 bot_lip_length = wall_thickness + 1.5;
-wall_height = 54;
+wall_height = 55;
 trap_width = 25;
 
 
