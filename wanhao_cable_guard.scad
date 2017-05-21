@@ -7,8 +7,8 @@ gap = 1.5;
 metal_gap = metal_thickness + gap;
 width = 7;
 lip_thickness = 1.5;
-top_lip_length = wall_thickness + 1;
-bot_lip_length = wall_thickness + 1.5;
+top_lip_length = wall_thickness;
+bot_lip_length = wall_thickness + 0.5;
 wall_height = 54;
 trap_width = 25;
 
@@ -55,5 +55,5 @@ module make_cable_guard() {
 minkowski()
 {
     make_cable_guard();
-    sphere(1.5);
+    sphere(.5);
 }
