@@ -9,7 +9,7 @@ width = 7;
 lip_thickness = 1.5;
 top_lip_length = wall_thickness + 1;
 bot_lip_length = wall_thickness + 1.5;
-wall_height = 55;
+wall_height = 54;
 trap_width = 25;
 
 
@@ -22,7 +22,7 @@ module lip_wrap(lip_length) {
   }
 }
 
-module makeCableGuard() {
+module make_cable_guard() {
   translate([wall_height / 2, 7.5, 0])
   rotate([0, -90, 0]) {
     union() {
@@ -54,6 +54,6 @@ module makeCableGuard() {
 
 minkowski()
 {
-    makeCableGuard();
+    make_cable_guard();
     sphere(1.5);
 }
